@@ -73,4 +73,19 @@ nav li {
   }
 }
 /* /responsive */
-/* main */
+/* portfolio */
+.portfolio{
+  text-align: center;
+}
+.portfolio__box{
+  padding: 20px;
+}
+.portfolio__box__img{
+  background-color: green;
+}
+.portfolio__img img{
+  max-width: 100%;
+}
+/* /portfolio */
+
+/* /main */
