@@ -4,17 +4,19 @@ body{
 }
 h1{
   font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.text_white{
+.text__white{
   color: #fff;
 }
 .nav-link {
   font-size: 16px;
 }
-.nav_logo{
+.nav__logo{
   font-size: 28px;
 }
-.nav_logo, .nav-link{
+.nav__logo, .nav-link{
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
@@ -25,6 +27,10 @@ h1{
 #hmbg{
   font-weight: 700;
 }
+.box__jumbotron p{
+  font-size: 24px;
+  font-weight: 300;
+}
 /* /typo */
 /* mix */
 .main__jumbotron, .main__about{
@@ -33,7 +39,7 @@ h1{
 }
 /* /mix */
 /* hover */
-.nav-link:hover, .nav-link:focus, .nav_logo:hover, .nav_logo:focus{
+.nav-link:hover, .nav-link:focus, .nav__logo:hover, .nav__logo:focus{
   color: #1abc9c;
   text-decoration: none;
 }
@@ -85,10 +91,33 @@ nav li {
 /* main */
 /* jumbotron */
 .box__jumbotron{
+  padding: 50px 0 30px 0;
   max-width: 800px;
   width: 60%;
   margin: auto;
   text-align: center;
+}
+.box__jumbotron img{
+  width: 240px;
+}
+.divisor{
+  margin-bottom: 20px;
+}
+.divisor::after, .divisor::before{
+  content: '';
+  height: 4px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 110px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.divisor__star{
+  font-size: 25px;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
 }
 /* jumbotron */
 /* responsive */
@@ -100,6 +129,12 @@ nav li {
 @media screen and (max-width:991px) {
   .box__jumbotron{
     width: 75%;
+  }
+  h1{
+    font-size: 38px;
+  }
+  .box__jumbotron p{
+    font-size: 20px;
   }
 }
 /* /responsive */
