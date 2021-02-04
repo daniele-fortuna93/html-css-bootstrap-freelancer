@@ -86,21 +86,28 @@ h1{
 /* /mix */
 /* btn */
 .btn__about{
-  font-size: 20px;
   font-weight: 300;
   border: 2px solid #fff;
-  border-radius: 5px;
-  padding: 12px 14px;
   background-color: inherit;
 }
+.btn__about, .form__btn{
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 12px 14px;
+}
+.form__btn{
+  font-weight: 500;
+}
+
 /* /btn */
 /* hover */
 .nav-link:hover, .nav-link:focus, .nav__logo:hover, .nav__logo:focus{
   color: #1abc9c;
   text-decoration: none;
 }
-#hmbg:hover{
+#hmbg:hover, .form__btn:hover{
   background-color: #148f77;
+  color: #fff;
 }
 .portfolio__box__img:hover .overlay__img{
   opacity: 0.8;
@@ -110,6 +117,9 @@ h1{
 }
 .btn__about:hover{
   background-color: #fff;
+}
+input:focus{
+  outline: none;
 }
 /* /hover */
 
@@ -237,6 +247,20 @@ nav li {
 /* contactme */
 .contactme{
   padding: 30px 0;
+}
+.input__box{
+  border-bottom: 1px solid #e9ecef;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+input, textarea{
+  display: block;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  color: #212529;
+  font-size: 24px;
+  font-weight: 500;
 }
 /* /contactme */
 /* /main */
