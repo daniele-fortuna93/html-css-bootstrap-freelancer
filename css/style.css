@@ -39,6 +39,11 @@ h1{
 .img__plus{
   font-size: 50px;
 }
+.about__text{
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 0;
+}
 /* /typo */
 /* mix */
 .main__jumbotron, .main__about{
@@ -79,6 +84,16 @@ h1{
   vertical-align: middle;
 }
 /* /mix */
+/* btn */
+.btn__about{
+  font-size: 20px;
+  font-weight: 300;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 12px 14px;
+  background-color: inherit;
+}
+/* /btn */
 /* hover */
 .nav-link:hover, .nav-link:focus, .nav__logo:hover, .nav__logo:focus{
   color: #1abc9c;
@@ -92,6 +107,9 @@ h1{
 }
 .portfolio__box__img:hover .img__plus{
   opacity: 1;
+}
+.btn__about:hover{
+  background-color: #fff;
 }
 /* /hover */
 
@@ -214,12 +232,6 @@ nav li {
 /* about */
 .about__title{
   margin-bottom: 20px;
-}
-.about__text{
-  padding: 20px 0;
-}
-.about__btn{
-  text-align: center;
 }
 /* /about */
 /* contactme */
