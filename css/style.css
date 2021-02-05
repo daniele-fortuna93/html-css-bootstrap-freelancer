@@ -2,6 +2,10 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 h1{
   font-size: 45px;
   text-transform: uppercase;
@@ -112,8 +116,12 @@ h1{
 
 /* /btn */
 /* hover */
-.nav-link:hover, .nav-link:focus, .nav__logo:hover, .nav__logo:focus{
+.nav-link:hover, .nav-link:focus, .nav__logo:hover{
   color: #1abc9c;
+  text-decoration: none;
+}
+.nav__logo:focus{
+  color: #fff;
   text-decoration: none;
 }
 #hmbg:hover, .form__btn:hover{
@@ -122,9 +130,11 @@ h1{
 }
 .portfolio__box__img:hover .overlay__img{
   opacity: 0.8;
+  cursor: pointer;
 }
 .portfolio__box__img:hover .img__plus{
   opacity: 1;
+  cursor: pointer;
 }
 .btn__about:hover{
   background-color: #fff;
@@ -315,5 +325,8 @@ footer{
 .footer__bottom{
   background-color: #1a252f;
   padding: 20px 0;
+}
+.footer__bottom p{
+  margin: 0;
 }
 /* /footer */
